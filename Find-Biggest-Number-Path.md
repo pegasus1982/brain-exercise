@@ -26,17 +26,17 @@ that, given the board represented as a matrix of integers consisting of **N** ro
 
    the function should return 9121. You can choose either of the following paths (the first field is denoted by **bold/italic/strike**):
 
-   | 9   | 1           | 1   | 0   | 7   |
-   | --- | ----------- | --- | --- | --- |
-   | 1   | 0           | *2* | *1* | 0   |
-   | 1   | ~~***9***~~ | *1* | 1   | 0   |
+   | 9   | 1         | 1   | 0   | 7   |
+   | --- | --------- | --- | --- | --- |
+   | 1   | 0         | *2* | *1* | 0   |
+   | 1   | ***`9`*** | *1* | 1   | 0   |
 
    or
 
-   | 9   | 1           | *1* | 0   | 7   |
-   | --- | ----------- | --- | --- | --- |
-   | 1   | 0           | *2* | 1   | 0   |
-   | 1   | ~~***9***~~ | *1* | 1   | 0   |
+   | 9   | 1         | *1* | 0   | 7   |
+   | --- | --------- | --- | --- | --- |
+   | 1   | 0         | *2* | 1   | 0   |
+   | 1   | ***`9`*** | *1* | 1   | 0   |
 
 2. Given the following board (**N** = 3, **M** = 3):
    
@@ -47,10 +47,10 @@ that, given the board represented as a matrix of integers consisting of **N** ro
 
    the function should return 4343. The best path is:
 
-   | 1   | 1       | 1           |
-   | --- | ------- | ----------- |
-   | 1   | ***3*** | ~~***4***~~ |
-   | 1   | ***4*** | ***3***     |
+   | 1   | 1       | 1         |
+   | --- | ------- | --------- |
+   | 1   | ***3*** | ***`4`*** |
+   | 1   | ***4*** | ***3***   |
 
 3. Given the following board (**N** = 1, **M** = 5):
     
@@ -59,8 +59,8 @@ that, given the board represented as a matrix of integers consisting of **N** ro
 
    the function should return 1500. the best path is:
 
-   | 0   | ~~*1*~~ | *5* | *0* | *0* |
-   | --- | ------- | --- | --- | --- |
+   | 0   | *`1`* | *5* | *0* | *0* |
+   | --- | ----- | --- | --- | --- |
 
 Write an efficient algorithm for the following assumption:
 
