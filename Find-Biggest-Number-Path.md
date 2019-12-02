@@ -7,7 +7,7 @@ The 4 digits of your path, in the order in which you visit them, create an integ
 
 Write a function
 
-```
+```javascript
     function solution(board){
         // todo list
     }
@@ -24,19 +24,19 @@ that, given the board represented as a matrix of integers consisting of N rows a
    | 1   | 0   | 2   | 1   | 0   |
    | 1   | 9   | 1   | 1   | 0   |
 
-   the function should return 9121. You can choose either of the following paths (the first field is denoted by **bold/italic/strike**):
+   the function should return **9121**. You can choose either of the following paths (the first field is denoted by red):
 
-   | 9   | 1           | 1   | 0   | 7   |
-   | --- | ----------- | --- | --- | --- |
-   | 1   | 0           | *2* | *1* | 0   |
-   | 1   | ~~***9***~~ | *1* | 1   | 0   |
+   | 9   | 1                                | 1                                 | 0                                 | 7   |
+   | --- | -------------------------------- | --------------------------------- | --------------------------------- | --- |
+   | 1   | 0                                | <span style="color:blue">2</span> | <span style="color:blue">1</span> | 0   |
+   | 1   | <span style="color:red">9</span> | <span style="color:blue">1</span> | 1                                 | 0   |
 
    or
 
-   | 9   | 1           | *1* | 0   | 7   |
-   | --- | ----------- | --- | --- | --- |
-   | 1   | 0           | *2* | 1   | 0   |
-   | 1   | ~~***9***~~ | *1* | 1   | 0   |
+   | 9   | 1                                | <span style="color:blue">1</span> | 0   | 7   |
+   | --- | -------------------------------- | --------------------------------- | --- | --- |
+   | 1   | 0                                | <span style="color:blue">2</span> | 1   | 0   |
+   | 1   | <span style="color:red">9</span> | <span style="color:blue">1</span> | 1   | 0   |
 
 2. Given the following board (N = 3, M = 3):
    
@@ -45,22 +45,22 @@ that, given the board represented as a matrix of integers consisting of N rows a
    | 1   | 3   | 4   |
    | 1   | 4   | 3   |
 
-   the function should return 4343. The best path is:
+   the function should return **4343**. The best path is:
 
-   | 1   | 1       | 1           |
-   | --- | ------- | ----------- |
-   | 1   | ***3*** | ~~***4***~~ |
-   | 1   | ***4*** | ***3***     |
+   | 1   | 1                                 | 1                                 |
+   | --- | --------------------------------- | --------------------------------- |
+   | 1   | <span style="color:blue">3</span> | <span style="color:red">4</span>  |
+   | 1   | <span style="color:blue">4</span> | <span style="color:blue">3</span> |
 
 3. Given the following board (N = 1, M = 5):
     
    | 0   | 1   | 5   | 0   | 0   |
    | --- | --- | --- | --- | --- |
 
-   the function should return 1500. the best path is:
+   the function should return **1500**. the best path is:
 
-   | 0   | ~~*1*~~ | *5* | *0* | *0* |
-   | --- | ------- | --- | --- | --- |
+   | 0   | <span style="color:red">1</span> | <span style="color:blue">5</span> | <span style="color:blue">0</span> | <span style="color:blue">0</span> |
+   | --- | -------------------------------- | --------------------------------- | --------------------------------- | --------------------------------- |
 
 Write an efficient algorithm for the following assumption:
 
