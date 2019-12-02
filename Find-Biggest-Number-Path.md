@@ -1,5 +1,5 @@
 # **Task**
-You are given a board of N rows and M columns. Each field of the board contains a single digit(0-9).
+You are given a board of **N** rows and **M** columns. Each field of the board contains a single digit(0-9).
 
 You want to find a path consisting of 4 neighboring fields. Two fields are neighboring if they share a common side. Also, the fields in your path should be distinct(you can't visit the same field twice).
 
@@ -13,57 +13,57 @@ Write a function
     }
 ```
 
-that, given the board represented as a matrix of integers consisting of N rows and M columns, returns the biggest integer that you can achieve when concatenating the values in a path of length four.
+that, given the board represented as a matrix of integers consisting of **N** rows and **M** columns, returns the biggest integer that you can achieve when concatenating the values in a path of length four.
 
 **Examples:**
 
-1. Given the following board (N=3, M=5):
+1. Given the following board (**N** = 3, **M** = 5):
    
    | 9   | 1   | 1   | 0   | 7   |
    | --- | --- | --- | --- | --- |
    | 1   | 0   | 2   | 1   | 0   |
    | 1   | 9   | 1   | 1   | 0   |
 
-   the function should return **9121**. You can choose either of the following paths (the first field is denoted by red):
+   the function should return 9121. You can choose either of the following paths (the first field is denoted by **bold/italic/strike**):
 
-   | 9   | 1                                | 1                                 | 0                                 | 7   |
-   | --- | -------------------------------- | --------------------------------- | --------------------------------- | --- |
-   | 1   | 0                                | <span style="color:blue">2</span> | <span style="color:blue">1</span> | 0   |
-   | 1   | <span style="color:red">9</span> | <span style="color:blue">1</span> | 1                                 | 0   |
+   | 9   | 1           | 1   | 0   | 7   |
+   | --- | ----------- | --- | --- | --- |
+   | 1   | 0           | *2* | *1* | 0   |
+   | 1   | ~~***9***~~ | *1* | 1   | 0   |
 
    or
 
-   | 9   | 1                                | <span style="color:blue">1</span> | 0   | 7   |
-   | --- | -------------------------------- | --------------------------------- | --- | --- |
-   | 1   | 0                                | <span style="color:blue">2</span> | 1   | 0   |
-   | 1   | <span style="color:red">9</span> | <span style="color:blue">1</span> | 1   | 0   |
+   | 9   | 1           | *1* | 0   | 7   |
+   | --- | ----------- | --- | --- | --- |
+   | 1   | 0           | *2* | 1   | 0   |
+   | 1   | ~~***9***~~ | *1* | 1   | 0   |
 
-2. Given the following board (N = 3, M = 3):
+2. Given the following board (**N** = 3, **M** = 3):
    
    | 1   | 1   | 1   |
    | --- | --- | --- |
    | 1   | 3   | 4   |
    | 1   | 4   | 3   |
 
-   the function should return **4343**. The best path is:
+   the function should return 4343. The best path is:
 
-   | 1   | 1                                 | 1                                 |
-   | --- | --------------------------------- | --------------------------------- |
-   | 1   | <span style="color:blue">3</span> | <span style="color:red">4</span>  |
-   | 1   | <span style="color:blue">4</span> | <span style="color:blue">3</span> |
+   | 1   | 1       | 1           |
+   | --- | ------- | ----------- |
+   | 1   | ***3*** | ~~***4***~~ |
+   | 1   | ***4*** | ***3***     |
 
-3. Given the following board (N = 1, M = 5):
+3. Given the following board (**N** = 1, **M** = 5):
     
    | 0   | 1   | 5   | 0   | 0   |
    | --- | --- | --- | --- | --- |
 
-   the function should return **1500**. the best path is:
+   the function should return 1500. the best path is:
 
-   | 0   | <span style="color:red">1</span> | <span style="color:blue">5</span> | <span style="color:blue">0</span> | <span style="color:blue">0</span> |
-   | --- | -------------------------------- | --------------------------------- | --------------------------------- | --------------------------------- |
+   | 0   | ~~*1*~~ | *5* | *0* | *0* |
+   | --- | ------- | --- | --- | --- |
 
 Write an efficient algorithm for the following assumption:
 
-* N and M are integers within the range[1..100];
+* **N** and **M** are integers within the range[1..100];
 * each element of matrix Board is an integer within the range [0..9];
 * there exist a path of length 4 which doesn't start with 0.
