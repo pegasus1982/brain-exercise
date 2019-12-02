@@ -24,7 +24,7 @@ that, given the board represented as a matrix of integers consisting of **N** ro
    | 1   | 0   | 2   | 1   | 0   |
    | 1   | 9   | 1   | 1   | 0   |
 
-   the function should return 9121. You can choose either of the following paths (the first field is denoted by **bold/italic/strike**):
+   the function should return **9121**. You can choose either of the following paths (the first field is denoted by **bold/italic/strike**):
 
    | 9   | 1         | 1   | 0   | 7   |
    | --- | --------- | --- | --- | --- |
@@ -45,7 +45,7 @@ that, given the board represented as a matrix of integers consisting of **N** ro
    | 1   | 3   | 4   |
    | 1   | 4   | 3   |
 
-   the function should return 4343. The best path is:
+   the function should return **4343**. The best path is:
 
    | 1   | 1       | 1         |
    | --- | ------- | --------- |
@@ -57,7 +57,7 @@ that, given the board represented as a matrix of integers consisting of **N** ro
    | 0   | 1   | 5   | 0   | 0   |
    | --- | --- | --- | --- | --- |
 
-   the function should return 1500. the best path is:
+   the function should return **1500**. the best path is:
 
    | 0   | *`1`* | *5* | *0* | *0* |
    | --- | ----- | --- | --- | --- |
