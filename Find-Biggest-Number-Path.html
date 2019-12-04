@@ -23,19 +23,19 @@
         newFlags[point[0]][point[1]] = true;
         // up
         if (point[0] > 0 && flags[point[0] - 1][point[1]] == false) {
-            pathes = findPathesRecursively(pathes, value, board, [point[0] - 1, point[1]], flags, depth - 1)
+            pathes = findPathesRecursively(pathes, value, board, [point[0] - 1, point[1]], newFlags, depth - 1)
         }
         // down
         if (point[0] < (N - 1) && flags[point[0] + 1][point[1]] == false) {
-            pathes = findPathesRecursively(pathes, value, board, [point[0] + 1, point[1]], flags, depth - 1)
+            pathes = findPathesRecursively(pathes, value, board, [point[0] + 1, point[1]], newFlags, depth - 1)
         }
         // left
         if (point[1] > 0 && flags[point[0]][point[1] - 1] == false) {
-            pathes = findPathesRecursively(pathes, value, board, [point[0], point[1] - 1], flags, depth - 1)
+            pathes = findPathesRecursively(pathes, value, board, [point[0], point[1] - 1], newFlags, depth - 1)
         }
         // right
         if (point[1] < (M - 1) && flags[point[0]][point[1] + 1] == false) {
-            pathes = findPathesRecursively(pathes, value, board, [point[0], point[1] + 1], flags, depth - 1)
+            pathes = findPathesRecursively(pathes, value, board, [point[0], point[1] + 1], newFlags, depth - 1)
         }
         return pathes;
     }
